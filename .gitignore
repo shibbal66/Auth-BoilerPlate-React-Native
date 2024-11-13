@@ -1,0 +1,72 @@
+# React Native
+node_modules/
+vendor/
+ios/Pods/
+android/.gradle/
+android/app/build/
+android/.idea/
+android/app/.cxx/
+android/local.properties
+*.iml
+*.lock
+
+# macOS
+.DS_Store
+
+# IDE and Editor settings
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# React Native Packager
+*.packager
+__tests__/__snapshots__/
+coverage/
+.cache/
+*.tmp
+*.temp
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build artifacts and dependencies
+dist/
+build/
+*.keystore
+*.jks
+
+# Xcode
+ios/build/
+ios/DerivedData/
+xcuserdata/
+!default.xcworkspace
+*.xcworkspace
+
+# Android
+android/app/build/
+android/app/release/
+android/app/debug/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+
+# Bundler
+.bundle/
+
+# Firebase
+ios/GoogleService-Info.plist
+android/app/google-services.json
+
+# Test artifacts
+__tests__/
+test-output/
+coverage/
