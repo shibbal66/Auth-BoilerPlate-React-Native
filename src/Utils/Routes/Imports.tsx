@@ -5,4 +5,8 @@ export{default as ResetPasswordScreen} from '../../Screens/AuthScreens/ResetPass
 export{default as OTPVerificationScreen} from '../../Screens/AuthScreens/OTPVerificationScreen' 
 export{default as CreateNewPasswordScreen} from '../../Screens/AuthScreens/CreateNewPasswordScreen' 
 export{default as PasswordChangedScreen} from '../../Screens/AuthScreens/PasswordChangedScreen' 
+export{default as ProfileScreen} from '../../Screens/AuthScreens/ProfileScreen' 
+export{default as EditProfileScreen} from '../../Screens/EditProfile' 
+
+
 

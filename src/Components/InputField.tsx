@@ -25,6 +25,7 @@ interface inputProps {
   visibility?: boolean;
   onRightPress?: () => void;
   editable?: boolean;
+  keyboardType?:any
 }
 
 const InputField: React.FC<inputProps> = ({
@@ -38,6 +39,8 @@ const InputField: React.FC<inputProps> = ({
   visibility,
   onRightPress,
   editable = true,
+  keyboardType
+
 }) => {
   return (
     <View style={styles.mainContainer}>
@@ -53,6 +56,7 @@ const InputField: React.FC<inputProps> = ({
           secureTextEntry={visibility}
           autoCapitalize="none"
           editable={editable}
+          keyboardType={keyboardType}
         />
         <TouchableOpacity
           style={{ justifyContent: "center" }}

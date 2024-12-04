@@ -27,7 +27,7 @@ import {
   responsiveHeight,
   responsiveWidth,
 } from 'react-native-responsive-dimensions';
-import PodCastInputField from '../../Components/InputField';
+
 import PodCastButton from '../../Components/Button';
 import {Formik} from 'formik';
 import * as Yup from 'yup';
@@ -36,6 +36,7 @@ import {useNavigation} from '@react-navigation/native';
 import {RootStackParamList} from '../../Utils/Types/Types';
 import {NAVIGATION_ROUTES} from '../../Utils/Routes/RouteConst';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
+import InputField from '../../Components/InputField';
 
 const RegisterSchema = Yup.object().shape({
   name: Yup.string().required('Full name is required').max(25),
@@ -112,7 +113,7 @@ const Sign_UpScreen = () => {
               setFieldValue,
             }) => (
               <>
-                <PodCastInputField
+                <InputField
                   leftIcon={<Account_Icon />}
                   placeholder={'Enter your name'}
                   onChangeText={handleChange('name')}
@@ -120,7 +121,7 @@ const Sign_UpScreen = () => {
                   value={values.name}
                   errorMessage={touched.name && errors.name ? errors.name :undefined}
                 />
-                <PodCastInputField
+                <InputField
                   leftIcon={<Email_Icon />}
                   placeholder={'Enter your email'}
                   onChangeText={text =>
@@ -130,7 +131,7 @@ const Sign_UpScreen = () => {
                   value={values.email}
                   errorMessage={touched.email && errors.email ? errors.email : undefined}
                 />
-                <PodCastInputField
+                <InputField
                   leftIcon={<Password_Icon />}
                   placeholder={'Enter your password'}
                   onChangeText={handleChange('password')}
@@ -143,7 +144,7 @@ const Sign_UpScreen = () => {
                   visibility={passwordVisible}
                   onRightPress={() => setPasswordVisible(!passwordVisible)}
                 />
-                <PodCastInputField
+                <InputField
                   leftIcon={<Password_Icon />}
                   placeholder={'Enter your confirm password'}
                   onChangeText={handleChange('confirmPassword')}

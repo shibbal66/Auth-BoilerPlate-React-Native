@@ -154,7 +154,10 @@ const handleAppleSignIn = ()=>{
                 <Apple_Icon />
               </TouchableOpacity>
             )}
-         <TouchableOpacity onPress={handleFaceBookSignIn}>
+         <TouchableOpacity
+          // onPress={handleFaceBookSignIn}
+          onPress={()=>navigation.navigate("PROFILE")}
+          >
             <Facebook_Icon />
             </TouchableOpacity>
           </View>
